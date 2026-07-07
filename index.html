@@ -1,27 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Human Rights Angels Registry</title>
-  <style>
-    body{background:#0a0a0a;color:#FFD700;font-family:Arial;text-align:center;margin:0;padding:20px}
-    h1{color:#FFD700;margin-bottom:30px;font-size:2rem;text-shadow:0 0 10px #FFD700}
-    #videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;max-width:1400px;margin:0 auto}
-    .video-box{background:#111;border:2px solid #FFD700;border-radius:10px;padding:10px;box-shadow:0 0 15px rgba(255,215,0,0.3)}
-    iframe{width:100%;height:220px;border:none;border-radius:6px}
-    .title{margin-top:8px;font-size:0.9rem;color:#FFD700;font-weight:bold}
-  </style>
-</head>
-<body>
-  <h1>Human Rights Angels Registry</h1>
-  <div id="videos"></div>
-  <script>
-    fetch('videos.json').then(r=>r.json()).then(d=>{
-      document.getElementById('videos').innerHTML=d.videos.map(v=>
-        `<div class="video-box"><iframe src="https://www.youtube.com/embed/${v.id}" allowfullscreen></iframe><div class="title">${v.title}</div></div>`
-      ).join('')
-    })
-  </script>
-</body>
-</html>
+git remote -v
+git remote set-url origin https://github.com/21stCenturyPharaoh/HumanRightsAngels-The-Registry.git
+git add .
+git commit -m "LAW48 REBUILD: HRAR Full C-Corp + Video Matrix + Hermes Brain"
+git push origin main
