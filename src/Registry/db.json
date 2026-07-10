@@ -1,0 +1,5 @@
+7. src/registry/db.json
+    **Content:** Empty case database template. ID only, no names.
+
+8. src/registry/router.js
+    **Content:** Route by country/violation_type → NGO, UN, Legal Aid
