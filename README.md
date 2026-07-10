@@ -4,8 +4,7 @@
 
 Commercial operations for 21stCenturyPharaoh synthetic empire.
 
-1. README.md
-    **Content:** Mission, 1-800 HRAR USA → +231888188457, Legal disclaimer, No doxxing rule
+1.**Content:** Mission, 1-800 HRAR USA → +231888188457, Legal disclaimer, No doxxing rule
 
 2. CODE_OF_CONDUCT.md
     **Content:** Safety, Trauma-informed, Anonymity first
