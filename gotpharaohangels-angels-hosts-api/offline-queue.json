@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-04-25",
+  "organization_fee_usd": 5,
+  "organizations": [
+    {
+      "id": "org_001",
+      "name": "Pharaoh Angels Inc. 法老集团",
+      "ein": "501(c)(3)",
+      "address": "152 Bankside Way, Sacramento, CA 95831",
+      "contact": "contact@pharaohangels.org",
+      "jobs": []
+    },
+    {
+      "id": "org_002",
+      "name": "Liberia Hope Foundation",
+      "address": "Monrovia, Montserrado County, LR",
+      "contact": "info@lhfoundation.lr",
+      "jobs": []
+    },
+    {
+      "id": "org_003",
+      "name": "West Africa Youth Network",
+      "contact": "jobs@wayn.org",
+      "jobs": []
+    },
+    {
+      "id": "org_004",
+      "name": "Sacramento Community Builders",
+      "contact": "hello@scb.org",
+      "jobs": []
+    },
+    {
+      "id": "org_005",
+      "name": "Global Diaspora Alliance",
+      "contact": "connect@globaldiaspora.org",
+      "jobs": []
+    },
+    {
+      "id": "org_006",
+      "name": "Angel Impact Partners",
+      "contact": "partner@angelimpact.org",
+      "jobs": []
+    },
+    {
+      "id": "org_007",
+      "name": "New Dawn Outreach",
+      "contact": "admin@newdawn.org",
+      "jobs": []
+    }
+  ]
+}
