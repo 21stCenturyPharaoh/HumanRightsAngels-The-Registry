@@ -1,0 +1,17 @@
+{
+  "videos": [
+    {
+      "id": "ZmM9b0JEah4",
+      "title": "HRAR Introduction - Explainer",
+      "platform": "youtube",
+      "category": "Introduction",
+      "language": "en",
+      "featured": true,
+      "description": "Human Rights Angels Registry Inc. C-Corp BRI 2.0 Explainer",
+      "thumbnail": "https://img.youtube.com/vi/ZmM9b0JEah4/maxresdefault.jpg",
+      "embed": "https://www.youtube.com/embed/ZmM9b0JEah4",
+      "watch": "https://youtu.be/ZmM9b0JEah4",
+      "tags": ["hrar", "bri", "c-corp", "sovereign-proxy", "law48"]
+    }
+  ]
+}
