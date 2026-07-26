@@ -113,7 +113,61 @@ footer{padding:40px 24px;border-top:1px solid var(--line);font-size:11px;color:#
 <div class="card"><h3>AI IS WORKFORCE + LAW48</h3><p style="font-size:12px;color:#888">Rule 241 Firewall: No commingling. 2 Entities, 1 Brain. Hermes-Toth automates client engagement while you sleep.</p></div>
 </div>
 
-<p class="upper mono gold" style="font-size:11px;margin:50px 0 20px">IV. MARKETPLACE — Pro Bono Service Exchange — ALL OPEN</p>
+
+<style>
+.tabs{display:flex;gap:1px;background:var(--line);border:1px solid var(--line);margin:20px 0}
+.tab{flex:1;padding:14px;text-align:center;cursor:pointer;font-weight:800;font-size:11px;letter-spacing:0.15em;background:var(--dim);color:#888;border:0}
+.tab.active{background:var(--gold);color:#000}
+.tab.gold.active{background:#FFD700;color:#000}
+.tab.green.active{background:#00FF88;color:#000}
+.tab.blue.active{background:#3B82F6;color:#fff}
+.panel{display:none}
+.panel.active{display:block}
+</style>
+
+<p id="marketplace-tabs" class="upper mono gold" style="font-size:11px;margin:50px 0 10px">IV. MARKETPLACE TABS — ENTER MARKETPLACE</p>
+<div class="tabs">
+<button class="tab gold active" onclick="switchTab('gold')">CH-01 GOLD — JOBS / ANGELS HIRING ANGELS</button>
+<button class="tab green" onclick="switchTab('green')">CH-02 GREEN — SERVICES / FOR-PROFIT PARTNERS</button>
+<button class="tab blue" onclick="switchTab('blue')">CH-03 BLUE — REGISTRY / JOIN / SUBMIT</button>
+</div>
+
+<div id="panel-gold" class="panel active">
+<div class="market">
+<div class="card"><b class="gold">H-2A / H-2B VISA PIPELINE</b><br><span style="font-size:11px;color:#888">LIBERIA TO USA LABOR • 10 openings • $18/hr+ • APPLY</span><br><a href="#registry" style="color:var(--gold);font-size:11px">APPLY NOW →</a></div>
+<div class="card"><b class="gold">GABE'S CREW — HIRING 3</b><br><span style="font-size:11px;color:#888">Landscaping • Sacramento • $25/hr • Start Monday</span><br><a href="https://wa.me/17578057262" style="color:var(--gold);font-size:11px">WHATSAPP GABE →</a></div>
+<div class="card"><b class="gold">DRUG STORE — PHARM TECH</b><br><span style="font-size:11px;color:#888">Monrovia • Full-time • Orange Money Payroll</span><br><a href="https://wa.me/231770507876" style="color:var(--gold);font-size:11px">WHATSAPP DR YANCY →</a></div>
+<div class="card"><b class="gold">BGIM INSTALL CREW</b><br><span style="font-size:11px;color:#888">Solar 30L 1.2kWh • 5 installers needed • Liberia</span><br><a href="#registry" style="color:var(--gold);font-size:11px">JOIN CREW →</a></div>
+</div>
+</div>
+
+<div id="panel-green" class="panel">
+<div class="partner" style="margin-bottom:16px"><div class="partner-head"><div><b class="gold">THE DRUGSTORE — DR. YANCY — $5-$50 PRODUCTS</b></div><div class="live">● LIVE • 0770507876</div></div><div style="padding:16px;background:#141414;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;font-size:12px;color:#aaa"><div>Paracetamol — $2<br>Orange Money 0770507876</div><div>Amoxicillin — $5<br>Order via WhatsApp</div><div>Wellness Check — $10<br>Monrovia Pickup</div></div></div>
+<div class="partner"><div class="partner-head"><div><b class="gold">GABE'S LANDSCAPING — $25/HR</b></div><div class="live">● LIVE USA</div></div><div style="padding:16px;background:#141414;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;font-size:12px;color:#aaa"><div>Lawn Mow — $25/hr</div><div>Clean-up — $30/hr</div><div>Hauling — $40/load</div></div></div>
+</div>
+
+<div id="panel-blue" class="panel">
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)">
+<div class="card"><b class="gold">JOIN THE ANGELS</b><br><span style="font-size:11px;color:#666">Name, Skill, Location, Orange Money</span><br><br><input placeholder="Full Name" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff;margin-bottom:6px"><input placeholder="Skill" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff;margin-bottom:6px"><input placeholder="Orange Money / Phone" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff"><br><a class="act bg-gold" style="color:#000;margin-top:8px">SUBMIT — VIA WHATSAPP TO REGISTRY</a></div>
+<div class="card"><b class="gold">SUBMIT JOB / SERVICE</b><br><span style="font-size:11px;color:#666">Post a job for Angels</span><br><br><input placeholder="Job Title" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff;margin-bottom:6px"><input placeholder="Rate $/hr" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff;margin-bottom:6px"><textarea placeholder="Description" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff;height:60px"></textarea><br><a class="act border-gold" style="color:var(--gold);margin-top:8px">POST JOB</a></div>
+<div class="card"><b class="gold">PARTNER WITH US — FOR-PROFIT</b><br><span style="font-size:11px;color:#666">Host your business + Hermes-Toth automation</span><br><br><input placeholder="Business Name" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff;margin-bottom:6px"><input placeholder="Contact Email" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff;margin-bottom:6px"><input placeholder="Orange Money / US Number" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff"><br><a class="act bg-gold" style="color:#000;margin-top:8px">APPLY — WE HOST + AUTOMATE</a></div>
+<div class="card"><b class="gold">PAYMENT PORTAL — ORANGE MONEY + ECO TOKEN</b><br><span style="font-size:11px;color:#666">Direct field vein — no middleman</span><br><br><p style="font-size:12px;color:#bbb">ORANGE MONEY LIBERIA: <b style="color:var(--gold)">0776961800</b> (Momolu Sirleaf Jr)<br>DRUG STORE: <b style="color:var(--gold)">0770507876</b><br>ECO TOKEN: Coming — circulation ledger<br><br>Send screenshot of payment via WhatsApp for receipt.</p><a class="act border-gold" style="color:var(--gold)">OPEN ORANGE MONEY APP</a></div>
+</div>
+</div>
+
+<script>
+function switchTab(c){
+document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+document.querySelector('.tab.'+c).classList.add('active');
+document.getElementById('panel-'+c).classList.add('active');
+}
+document.addEventListener('DOMContentLoaded',()=>{
+if(location.hash==='#marketplace'){switchTab('gold');document.getElementById('marketplace-tabs').scrollIntoView();}
+document.querySelector('a[href="#marketplace"]').addEventListener('click',e=>{e.preventDefault();switchTab('gold');document.getElementById('marketplace-tabs').scrollIntoView({behavior:'smooth'});});
+});
+</script>
+<p class="upper mono gold" style="font-size:11px;margin:40px 0 10px">LEGACY MARKETPLACE — ALL OPEN (V3)</p>
 <div class="market">
 <div class="card"><b class="gold">HRAR INC 88-0710776</b><br><span style="font-size:11px;color:#666">SOVEREIGN PROXY • HUMAN RIGHTS • OPEN</span></div>
 <div class="card"><b class="gold">LETGODHELP FOUNDATION</b><br><span style="font-size:11px;color:#666">501c3 SUPPORT • OPEN</span></div>
