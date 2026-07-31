@@ -209,5 +209,58 @@ LAW48 Firewall — Rule 241 — Hermes-Toth Active
 </div>
 
 <footer><div style="max-width:1280px;margin:auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px"><div>© 2026 PHARAOH CONGLOMERATE ORG<br>Built in Termux. Ruled by 21stCenturyPharaoh.</div><div>MONROVIA + SACRAMENTO<br>Orange 0776961800 • CashApp $LetGodHelp<br>Drug 0770507876 • Gabe 757-805-7262</div><div>EIN 88-0836464 • HRAR 88-0710776<br>LAW48 • Genesis 1:28 • Hermes-Toth Automated</div></div></footer>
-</body>
+</body><!-- V8 PAYMENT BANNER - ADD TO har-the-registry.pages.dev -->
+<div style="background:#0a0a0a; border:3px solid #D4AF37; padding:20px; margin:20px 0; color:white; font-family:Arial;">
+  <h2>👑 HOW TO BUY - CUSTOMER'S CHOICE</h2>
+  <p><b>ALL PAYMENTS SEND TO:</b></p>
+  <h3 style="color:#D4AF37;">Orange Money Liberia: +231 776961800</h3>
+  <p><b>Account Name:</b> Registry Pharaoh</p>
+  
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin:15px 0;">
+    <button onclick="payOrange()" style="padding:12px; background:gold; color:black; border:none; cursor:pointer;">
+      1. Pay Orange Money App
+    </button>
+    <button onclick="payWU()" style="padding:12px; background:white; color:black; border:none; cursor:pointer;">
+      2. Western Union
+    </button>
+    <button onclick="payMG()" style="padding:12px; background:white; color:black; border:none; cursor:pointer;">
+      3. MoneyGram
+    </button>
+  </div>
+
+  <p><b>AFTER PAYMENT:</b> Screenshot + Email to <a href="mailto:orders@pharaoh-conglomerate.org">orders@pharaoh-conglomerate.org</a></p>
+  <p><b>Include:</b> Your Reference # + Email. PDF/Videobook delivered in 5 minutes.</p>
+</div>
+
+<!-- DONATIONS SECTION -->
+<div style="background:#111; border:2px dashed #D4AF37; padding:20px; margin:20px 0; color:white;">
+  <h2>🕊️ DONATE TO 501(c)(3) - HUMANITARIAN AID</h2>
+  <p><b>Need Now:</b> Rice, Water, Bibles, School Supplies for Liberia</p>
+  <p><b>Send To Same Number:</b> Orange Money +231 776961800</p>
+  <button onclick="donate('orange')">Donate via Orange</button>
+  <button onclick="donate('wu')">Donate via WU/MG</button>
+</div>
+
+<script>
+const ORANGE = "+231776961800";
+const ref = new URLSearchParams(window.location.search).get('ref') || 'organic';
+const price = 19.99; // change per product
+
+function payOrange(){
+  alert(`STEP 1: Open Orange Money\nSTEP 2: Send $${price} to ${ORANGE}\nSTEP 3: Reference: ${ref}\nSTEP 4: Email screenshot to us`);
+}
+
+function payWU(){
+  alert(`Send $${price} to: Registry Pharaoh, Monrovia Liberia\nGet MTCN #\nEmail MTCN + ${ref} to orders@pharaoh-conglomerate.org`);
+}
+
+function payMG(){ payWU(); } // same process
+
+function donate(m){
+  alert(`Donation via ${m.toUpperCase()}. Reference: DON-${Date.now()}. Email proof to donations@pharaoh-conglomerate.org`);
+}
+
+// AI AFFILIATE TRACKING
+fetch(`https://angels-hosts-api3.pharangels.workers.dev/track?ref=${ref}&page=har-registry`);
+</script>
 </html>
