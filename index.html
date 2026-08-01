@@ -1,331 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pharaoh Conglomerate Org | The Messianic Imperial Kham-Dom - V5 MERGED</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHARAOH CONGLOMERATE | Global Affiliate Corps</title>
 <style>
-:root{--gold:#D4AF37;--black:#0A0A0A;--dim:#141414;--line:#232323;--green:#00FF88}
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--black);color:#fff;font-family:Inter,system-ui,sans-serif;line-height:1.5}
-.gold{color:var(--gold)} .bg-gold{background:var(--gold);color:#000} .border-gold{border:1px solid var(--gold)}
-.mono{font-family:ui-monospace,monospace} .upper{text-transform:uppercase;letter-spacing:0.15em}
-.hero{padding:70px 24px 50px;border-bottom:1px solid var(--line);text-align:center}
-h1{font-size:56px;line-height:0.9;font-weight:900;letter-spacing:-0.03em} h1 span{display:block}
-.btn{padding:14px 28px;border:1px solid var(--gold);display:inline-block;text-decoration:none;font-weight:700;letter-spacing:0.1em}
-.btn-gold{background:var(--gold);color:#000}
-.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-.card{background:var(--dim);padding:22px}
-.card h3{color:var(--gold);font-size:11px;letter-spacing:0.2em;margin-bottom:10px}
-.video{position:relative;padding-bottom:177.7%;height:0;overflow:hidden;background:#000;border:1px solid var(--line)}
-.video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-.video-wide{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;background:#000;border:1px solid var(--gold)}
-.video-wide iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-.partner{background:#111;border:1px solid var(--gold);overflow:hidden;margin-bottom:24px}
-.partner-head{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.live{color:var(--green);font-size:10px;font-weight:900;letter-spacing:0.2em}
-.partner-body{display:grid;grid-template-columns:340px 1fr}
-.partner-info{padding:22px;background:var(--dim)} .partner-info p{font-size:13px;margin:7px 0;color:#bbb}
-.partner-info b{color:var(--gold)}
-.act{padding:12px;display:block;text-align:center;text-decoration:none;font-weight:800;font-size:12px;letter-spacing:0.1em;border:1px solid var(--gold);margin-top:10px}
-.market{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-.donate{background:#111;padding:40px;border:1px solid var(--gold);margin-top:60px}
-footer{padding:40px 24px;border-top:1px solid var(--line);font-size:11px;color:#888;line-height:1.8}
-@media(max-width:900px){h1{font-size:32px}.grid4,.grid3,.market{grid-template-columns:1fr}.partner-body{grid-template-columns:1fr}}
+:root{--gold:#d4af37;--gold2:#f9e27d;--bg:#070a12;--card:#111625;--text:#eef1f7;--muted:#9aa3b8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(1200px 600px at 50% -20%, #1a2040 0%, var(--bg) 60%) var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6}
+.container{max-width:1120px;margin:0 auto;padding:0 24px}
+.hero{text-align:center;padding:88px 0 56px;position:relative}
+.logo{width:110px;height:110px;margin:0 auto 20px;border-radius:50%;box-shadow:0 0 40px rgba(212,175,55,.5);background:#000 url('./logo_0_0.png') center/cover}
+h1{font-size:48px;letter-spacing:.12em;font-weight:900;background:linear-gradient(180deg,var(--gold2),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-size:20px;color:var(--gold2);letter-spacing:.18em;margin-bottom:20px}
+.hero p{color:var(--muted);max-width:620px;margin:0 auto 28px;font-size:18px}
+.btn{display:inline-block;padding:14px 28px;border-radius:10px;background:linear-gradient(180deg,var(--gold2),var(--gold));color:#0a0a0a;font-weight:900;letter-spacing:.04em;box-shadow:0 8px 24px rgba(212,175,55,.35)}
+.subtext{margin-top:14px;font-size:12px;color:#6b7386}
+.section{padding:56px 0;border-top:1px solid #1b2238}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:28px}
+.card{background:rgba(255,255,255,.03);border:1px solid #1f2946;border-radius:16px;padding:22px}
+.card h4{color:var(--gold2);letter-spacing:.08em;margin-bottom:8px;font-size:13px}
+.card p{font-size:14px;color:var(--muted);margin:4px 0}
+h3{font-size:28px;letter-spacing:.1em;text-align:center;margin-bottom:8px}
+.covenant{max-width:720px;margin:24px auto 0;background:#0d1222;border:1px solid #1e2a4a;border-radius:12px;padding:20px}
+.covenant li{margin:8px 0;color:#c7cfdf;font-size:14px}
+.footer{text-align:center;padding:40px 0;color:#5a647c;font-size:12px;border-top:1px solid #1b2238}
+.glow{position:absolute;top:5%;left:50%;transform:translateX(-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(212,175,55,.18) 0%, transparent 70%);pointer-events:none}
 </style>
 </head>
 <body>
-<div style="background:var(--gold);color:#000;text-align:center;padding:6px;font-size:10px;font-weight:900;letter-spacing:0.2em">EIN 88-0836464 TAX-EXEMPT • HRAR INC 88-0710776 SOVEREIGN PROXY • ORANGE MONEY LR 0776961800 • DRUG STORE 0770507876 • GABE 757-805-7262 • BUILT IN TERMUX</div>
+<div class="glow"></div>
+<header class="hero container">
+<div class="logo"></div>
+<h1>PHARAOH CONGLOMERATE</h1>
+<h2>Global Affiliate Corps</h2>
+<p>Earn 20% Commission. Digital Products. Global Reach. Zero Headcount.</p>
+<a href="/signup.html" class="btn">I AGREE & JOIN THE CORPS</a>
+<div class="subtext">Human Rights Angels Registry Inc. C-Corp | Sovereign Proxy: Pharaoh Angels Inc dba Pharaoh Conglomerate</div>
+</header>
 
-<div class="hero">
-<p class="upper mono" style="color:var(--gold);font-size:11px;margin-bottom:16px">Commonwealth of Israel Church • Pharaoh Conglomerate Org • Monrovia + Sacramento</p>
-<h1><span>THE MESSIANIC</span><span class="gold">IMPERIAL</span><span>KHAM-DOM</span></h1>
-<p class="mono" style="margin-top:18px;color:#aaa;max-width:700px;margin-inline:auto">Genesis 1:28 — Be Fruitful and Multiply, Have Dominion. Market is Weapon. Token is Blood. AI is Workforce. For the Kingdom, By the Kingdom.</p>
-<div style="margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn btn-gold" href="#marketplace">ENTER MARKETPLACE</a><a class="btn" href="#donate">DONATE - ORANGE MONEY</a></div>
-
-<div style="max-width:420px;margin:40px auto 0">
-<p class="upper mono gold" style="font-size:11px;margin-bottom:12px">CENTERPIECE — THE MESSAGE</p>
-<div class="video-wide" style="padding-bottom:177.7%"><iframe src="https://www.youtube-nocookie.com/embed/ZmM9b0JEah4?rel=0&modestbranding=1" allowfullscreen></iframe></div>
-<p class="mono" style="font-size:10px;color:#555;margin-top:8px">youtube.com/shorts/ZmM9b0JEah4 — Official Kham-Dom Transmission</p>
-</div>
-</div>
-
-<div style="padding:50px 24px;max-width:1280px;margin:auto">
-
-<p class="upper mono gold" style="font-size:11px;margin-bottom:20px">I. THE MANDATE — Genesis 1:28</p>
-<div class="grid4">
-<div class="card"><h3>GENESIS 1:28 / DOMINION</h3><p style="font-size:13px;color:#bbb;line-height:1.6">God blessed them and said be fruitful, multiply, replenish the earth and subdue it: and have dominion. Economics is obedience.</p></div>
-<div class="card"><h3>EPHESIANS 2-3 / COMMONWEALTH</h3><p style="font-size:13px;color:#bbb;line-height:1.6">Ye are no more strangers, but fellow citizens... built upon foundation of apostles. One Commonwealth of Israel.</p></div>
-<div class="card"><h3>ISAIAH 29:22-24 / HOUSE OF JACOB</h3><p style="font-size:13px;color:#bbb;line-height:1.6">Jacob shall not now be ashamed... they shall sanctify my name, and sanctify the Holy One of Jacob.</p></div>
-<div class="card"><h3>HOSEA 11:1 / OUT OF EGYPT</h3><p style="font-size:13px;color:#bbb;line-height:1.6">When Israel was a child, I loved him, and called my son out of Egypt. The Pharaoh returns for his people.</p></div>
-</div>
-
-<p id="marketplace" class="upper mono gold" style="font-size:11px;margin:60px 0 20px">II. FOR-PROFIT STRATEGIC PARTNERS — LIVE ENTERPRISES — HERMES-TOTH AUTOMATED</p>
-
-<div class="partner">
-<div class="partner-head"><div><b class="gold" style="font-size:18px">THE DRUGSTORE — DR. ISAIAH SHAD YANCY • PHOTO ID VERIFIED</b><br><span class="mono" style="font-size:10px;color:#888">CEO • MONROVIA LIBERIA • PHARMACEUTICAL & WELLNESS • VERIFIED PARTNER</span></div><div class="live">● LIVE • ORANGE MONEY READY • HERMES-TOTH</div></div>
-<div class="partner-body">
-<div><img src="container:///mnt/data/photo8648258028783838623.jpeg" style="width:100%;height:380px;object-fit:cover;border-bottom:1px solid #D4AF37;display:block"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/Bs5RF8svlq4?rel=0&modestbranding=1" allowfullscreen></iframe></div></div>
-<div class="partner-info">
-<p><b>ENTERPRISE:</b> The Drug Store — Licensed Pharmacy</p>
-<p><b>CEO:</b> Dr. Isaiah Shad Yancy</p>
-<p style="margin-top:12px"><b>PLACE ORDERS — SEND PAYMENT TO:</b></p>
-<p style="font-size:20px;color:var(--gold);font-weight:900">Orange Money: 0770507876</p>
-<p style="font-size:11px;color:#666">+231 77 050 7876 • Dr Isaiah Shad Yancy's Drug Store</p>
-<hr style="border:0;border-top:1px solid var(--line);margin:12px 0">
-<p><b>PHONE:</b> 0770507876</p>
-<p><b>WHATSAPP:</b> +231 77 050 7876 — <a href="https://wa.me/231770507876" style="color:var(--gold)">Chat Now</a></p>
-<p><b>EMAIL:</b> drshadyancy@gmail.com</p>
-<p><b>VIDEO:</b> <a href="https://youtube.com/shorts/Bs5RF8svlq4" style="color:var(--gold)">youtube.com/shorts/Bs5RF8svlq4</a></p>
-<a class="act bg-gold" href="https://wa.me/231770507876?text=Salaam%20Dr%20Yancy%20-%20Order%20from%20Pharaoh%20Registry">ORDER VIA WHATSAPP</a>
-<a class="act border-gold" style="color:var(--gold)" href="tel:+231770507876">CALL 0770507876</a>
-<p class="mono" style="font-size:9px;color:#555;margin-top:12px">HERMES-TOTH: Auto-receipt, Inventory ping, Client engagement. Hosted on Kham-Dom.</p>
-</div>
-</div>
-</div>
-
-<div class="partner">
-<div class="partner-head"><div><b class="gold" style="font-size:18px">GABE'S LANDSCAPING — GABRIEL TRUTH BENYAHWEH • PHOTO ID VERIFIED</b><br><span class="mono" style="font-size:10px;color:#888">CEO • SACRAMENTO CA • $25/HR • VERIFIED PARTNER</span></div><div class="live">● LIVE • USA OPERATIONS • HERMES-TOTH</div></div>
-<div class="partner-body">
-<div><img src="container:///mnt/data/photo7643129088655979601.jpeg" style="width:100%;height:380px;object-fit:cover;object-position:top center;border-bottom:1px solid #D4AF37;display:block"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/dhMFcoDD2Tk?rel=0&modestbranding=1" allowfullscreen></iframe></div></div>
-<div class="partner-info">
-<p><b>ENTERPRISE:</b> Gabe's Landscaping — Residential & Commercial</p>
-<p><b>CEO:</b> Gabriel Truth Copeland</p>
-<p style="margin-top:12px"><b>SERVICES:</b> Lawn Care, Clean-ups, Hauling, Pressure Washing</p>
-<p style="font-size:18px;color:var(--gold);font-weight:900">$25/hr • OPEN FOR BOOKING</p>
-<hr style="border:0;border-top:1px solid var(--line);margin:12px 0">
-<p><b>PHONE:</b> (757) 805-7262</p>
-<p><b>WHATSAPP:</b> +1 757 805 7262 — <a href="https://wa.me/17578057262" style="color:var(--gold)">Chat Now</a></p>
-<p><b>EMAIL:</b> pharangels@gmail.com</p>
-<p><b>VIDEO:</b> <a href="https://youtube.com/shorts/dhMFcoDD2Tk" style="color:var(--gold)">youtube.com/shorts/dhMFcoDD2Tk</a></p>
-<a class="act bg-gold" href="https://wa.me/17578057262?text=Salaam%20Gabe%20-%20Booking%20via%20Pharaoh%20Registry">BOOK VIA WHATSAPP</a>
-<a class="act border-gold" style="color:var(--gold)" href="tel:+17578057262">CALL (757) 805-7262</a>
-<p class="mono" style="font-size:9px;color:#555;margin-top:12px">HERMES-TOTH: Auto-quote, Scheduling, Client follow-up. Hosted on Kham-Dom.</p>
-</div>
-</div>
-</div>
-
-<p class="upper mono gold" style="font-size:11px;margin:50px 0 20px">III. THE DOCTRINE — Market • Token • AI • LAW48</p>
+<section class="section container">
+<h3>CHOOSE YOUR LANE</h3>
 <div class="grid3">
-<div class="card"><h3>MARKET IS WEAPON</h3><p style="font-size:12px;color:#888">We don't compete. We replace. Pro Bono Service Exchange replaces begging with labor. For-profit partners plug directly into registry.</p></div>
-<div class="card"><h3>TOKEN IS BLOOD</h3><p style="font-size:12px;color:#888">ECO Token is circulation system. Not speculation. Redemption receipt. Orange Money is field vein.</p></div>
-<div class="card"><h3>AI IS WORKFORCE + LAW48</h3><p style="font-size:12px;color:#888">Rule 241 Firewall: No commingling. 2 Entities, 1 Brain. Hermes-Toth automates client engagement while you sleep.</p></div>
+<div class="card"><h4>LANE A: H.A.L.EL CORPS</h4><p>Territory: Global. Payout: USD / LD via Bank, Mobile Money.</p><p>Mission: Sell Visionary Intelligence Products to executives and founders.</p></div>
+<div class="card"><h4>LANE B: BRI & ESG CORPS</h4><p>Territory: Asia, BRI Nations, Global South. Payout: EST / ETH Credits.</p><p>Mission: Drive ESG adoption via Volunteer Exchange Portal.</p></div>
+<div class="card"><h4>LANE C: GLOBAL PRO BONO CORPS</h4><p>Territory: Worldwide. Payout: ESG Credits + Portfolio Certificates.</p><p>Mission: Engineers, Lawyers, Experts. Build proof, not invoices.</p></div>
 </div>
+</section>
 
-
-<style>
-.tabs{display:flex;gap:1px;background:var(--line);border:1px solid var(--line);margin:20px 0}
-.tab{flex:1;padding:14px;text-align:center;cursor:pointer;font-weight:800;font-size:11px;letter-spacing:0.15em;background:var(--dim);color:#888;border:0}
-.tab.active{background:var(--gold);color:#000}
-.tab.gold.active{background:#FFD700;color:#000}
-.tab.green.active{background:#00FF88;color:#000}
-.tab.blue.active{background:#3B82F6;color:#fff}
-.panel{display:none}
-.panel.active{display:block}
-</style>
-
-<p id="marketplace-tabs" class="upper mono gold" style="font-size:11px;margin:50px 0 10px">IV. MARKETPLACE TABS — ENTER MARKETPLACE</p>
-<div class="tabs">
-<button class="tab gold active" onclick="switchTab('gold')">CH-01 GOLD — JOBS / ANGELS HIRING ANGELS</button>
-<button class="tab green" onclick="switchTab('green')">CH-02 GREEN — SERVICES / FOR-PROFIT PARTNERS</button>
-<button class="tab blue" onclick="switchTab('blue')">CH-03 BLUE — REGISTRY / JOIN / SUBMIT</button>
+<section class="section container">
+<h3>THE GLOBAL AFFILIATE COVENANT</h3>
+<div class="covenant"><ul>
+<li>20% Commission on completed digital product sales only</li>
+<li>No jobs. No visas. No recruitment bonuses. This is not MLM.</li>
+<li>1 Person = 1 Account. Zero tolerance for bots or spam.</li>
+<li>Monthly payouts. Independent Contractor. Governed: California, USA</li>
+</ul>
+<p style="margin-top:16px"><a href="/Affiliate_Covenant_v1.0.pdf" target="_blank">READ FULL COVENANT PDF</a></p>
 </div>
+</section>
 
-<div id="panel-gold" class="panel active">
-<div class="market">
-<div class="card"><b class="gold">H-2A / H-2B VISA PIPELINE</b><br><span style="font-size:11px;color:#888">LIBERIA TO USA LABOR • 10 openings • $18/hr+ • APPLY</span><br><a href="#registry" style="color:var(--gold);font-size:11px">APPLY NOW →</a></div>
-<div class="card"><b class="gold">GABE'S CREW — HIRING 3</b><br><span style="font-size:11px;color:#888">Landscaping • Sacramento • $25/hr • Start Monday</span><br><a href="https://wa.me/17578057262" style="color:var(--gold);font-size:11px">WHATSAPP GABE →</a></div>
-<div class="card"><b class="gold">DRUG STORE — PHARM TECH</b><br><span style="font-size:11px;color:#888">Monrovia • Full-time • Orange Money Payroll</span><br><a href="https://wa.me/231770507876" style="color:var(--gold);font-size:11px">WHATSAPP DR YANCY →</a></div>
-<div class="card"><b class="gold">BGIM INSTALL CREW</b><br><span style="font-size:11px;color:#888">Solar 30L 1.2kWh • 5 installers needed • Liberia</span><br><a href="#registry" style="color:var(--gold);font-size:11px">JOIN CREW →</a></div>
-</div>
-</div>
+<section class="section container" style="text-align:center">
+<h3>THE EMPIRE IS HIRING CAPTAINS, NOT EMPLOYEES</h3>
+<p style="color:#9aa3b8;margin:12px 0 20px">We prove the model globally first. Then we bring it home.</p>
+<a href="/signup.html" class="btn">I AGREE & CREATE ACCOUNT</a>
+</section>
 
-<div id="panel-green" class="panel">
-<div class="partner" style="margin-bottom:16px"><div class="partner-head"><div><b class="gold">THE DRUGSTORE — DR. YANCY — $5-$50 PRODUCTS</b></div><div class="live">● LIVE • 0770507876</div></div><div style="padding:16px;background:#141414;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;font-size:12px;color:#aaa"><div>Paracetamol — $2<br>Orange Money 0770507876</div><div>Amoxicillin — $5<br>Order via WhatsApp</div><div>Wellness Check — $10<br>Monrovia Pickup</div></div></div>
-<div class="partner"><div class="partner-head"><div><b class="gold">GABE'S LANDSCAPING — $25/HR</b></div><div class="live">● LIVE USA</div></div><div style="padding:16px;background:#141414;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;font-size:12px;color:#aaa"><div>Lawn Mow — $25/hr</div><div>Clean-up — $30/hr</div><div>Hauling — $40/load</div></div></div>
-</div>
-
-<div id="panel-blue" class="panel">
-<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)">
-<div class="card"><b class="gold">JOIN THE ANGELS</b><br><span style="font-size:11px;color:#666">Name, Skill, Location, Orange Money</span><br><br><input placeholder="Full Name" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff;margin-bottom:6px"><input placeholder="Skill" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff;margin-bottom:6px"><input placeholder="Orange Money / Phone" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff"><br><a class="act bg-gold" style="color:#000;margin-top:8px">SUBMIT — VIA WHATSAPP TO REGISTRY</a></div>
-<div class="card"><b class="gold">SUBMIT JOB / SERVICE</b><br><span style="font-size:11px;color:#666">Post a job for Angels</span><br><br><input placeholder="Job Title" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff;margin-bottom:6px"><input placeholder="Rate $/hr" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff;margin-bottom:6px"><textarea placeholder="Description" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff;height:60px"></textarea><br><a class="act border-gold" style="color:var(--gold);margin-top:8px">POST JOB</a></div>
-<div class="card"><b class="gold">PARTNER WITH US — FOR-PROFIT</b><br><span style="font-size:11px;color:#666">Host your business + Hermes-Toth automation</span><br><br><input placeholder="Business Name" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff;margin-bottom:6px"><input placeholder="Contact Email" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff;margin-bottom:6px"><input placeholder="Orange Money / US Number" style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#fff"><br><a class="act bg-gold" style="color:#000;margin-top:8px">APPLY — WE HOST + AUTOMATE</a></div>
-<div class="card"><b class="gold">PAYMENT PORTAL — ORANGE MONEY + ECO TOKEN</b><br><span style="font-size:11px;color:#666">Direct field vein — no middleman</span><br><br><p style="font-size:12px;color:#bbb">ORANGE MONEY LIBERIA: <b style="color:var(--gold)">0776961800</b> (Momolu Sirleaf Jr)<br>DRUG STORE: <b style="color:var(--gold)">0770507876</b><br>ECO TOKEN: Coming — circulation ledger<br><br>Send screenshot of payment via WhatsApp for receipt.</p><a class="act border-gold" style="color:var(--gold)">OPEN ORANGE MONEY APP</a></div>
-</div>
-</div>
-
-<script>
-function switchTab(c){
-document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
-document.querySelector('.tab.'+c).classList.add('active');
-document.getElementById('panel-'+c).classList.add('active');
-}
-document.addEventListener('DOMContentLoaded',()=>{
-if(location.hash==='#marketplace'){switchTab('gold');document.getElementById('marketplace-tabs').scrollIntoView();}
-document.querySelector('a[href="#marketplace"]').addEventListener('click',e=>{e.preventDefault();switchTab('gold');document.getElementById('marketplace-tabs').scrollIntoView({behavior:'smooth'});});
-});
-</script>
-<p class="upper mono gold" style="font-size:11px;margin:40px 0 10px">LEGACY MARKETPLACE — ALL OPEN (V3)</p>
-<div class="market">
-<div class="card"><b class="gold">HRAR INC 88-0710776</b><br><span style="font-size:11px;color:#666">SOVEREIGN PROXY • HUMAN RIGHTS • OPEN</span></div>
-<div class="card"><b class="gold">LETGODHELP FOUNDATION</b><br><span style="font-size:11px;color:#666">501c3 SUPPORT • OPEN</span></div>
-<div class="card"><b class="gold">EMERGENCY FOOD & SHELTER</b><br><span style="font-size:11px;color:#666">MONROVIA / SAC • OPEN</span></div>
-<div class="card"><b class="gold">H-2A / H-2B VISA PIPELINE</b><br><span style="font-size:11px;color:#666">LIBERIA TO USA LABOR • OPEN</span></div>
-<div class="card"><b class="gold">VA TO FREEPORT UNDERGROUND 2026</b><br><span style="font-size:11px;color:#666">RELOCATION • OPEN</span></div>
-<div class="card"><b class="gold">BGIM 30L 1.2kWh OFF-GRID</b><br><span style="font-size:11px;color:#666">SOLAR GENESIS • OPEN</span></div>
-<div class="card"><b class="gold">ECO TOKEN SWAP</b><br><span style="font-size:11px;color:#666">REDEMPTION • OPEN</span></div>
-<div class="card"><b class="gold">APPLY TO BE STRATEGIC PARTNER</b><br><span style="font-size:11px;color:#666">FOR-PROFIT HOSTING + AUTOMATION • APPLY</span></div>
-</div>
-
-<div id="donate" class="donate">
-<p class="upper mono gold">V. TREASURY — DONATE — DIRECT FIELD VEIN</p>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:24px">
-<div>
-<p style="font-size:22px;font-weight:900">ORANGE MONEY LIBERIA</p>
-<p style="font-size:40px;color:var(--gold);font-weight:900">0776961800</p>
-<p class="mono" style="font-size:11px;color:#aaa">MOMOLU SIRLEAF JR. • MONROVIA • NO MIDDLEMAN</p>
-<br>
-<p><b>CASHAPP:</b> $LetGodHelp</p>
-<p><b>EMAIL:</b> pharaohangelsinc@gmail.com</p>
-<br>
-<p style="font-size:13px"><b>DRUG STORE PAYMENTS:</b><br><span style="color:var(--gold);font-size:20px">0770507876</span><br>Dr Isaiah Shad Yancy</p>
-</div>
-<div style="font-size:11px;line-height:2;color:#bbb" class="mono">
-<b>PHARAOH ANGELS INC 501(c)(3) NGO</b><br>
-EIN 88-0836464 — TAX-EXEMPT<br><br>
-<b>HUMAN RIGHTS ANGELS REGISTRY INC (HRAR INC)</b><br>
-EIN 88-0710776 — SOVEREIGN PROXY<br><br>
-<b>HOSTED STRATEGIC PARTNERS:</b><br>
-• Drug Store — 0770507876<br>
-• Gabe's Landscaping — 757-805-7262<br><br>
-160 Bankside Way, Sacramento CA 95831<br>
-Zero commingling — 2 Entities, 1 Brain<br>
-LAW48 Firewall — Rule 241 — Hermes-Toth Active
-</div>
-</div>
-</div>
-</div>
-
-<footer><div style="max-width:1280px;margin:auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px"><div>© 2026 PHARAOH CONGLOMERATE ORG<br>Built in Termux. Ruled by 21stCenturyPharaoh.</div><div>MONROVIA + SACRAMENTO<br>Orange 0776961800 • CashApp $LetGodHelp<br>Drug 0770507876 • Gabe 757-805-7262</div><div>EIN 88-0836464 • HRAR 88-0710776<br>LAW48 • Genesis 1:28 • Hermes-Toth Automated</div></div></footer>
-</body><!-- V8 PAYMENT BANNER - ADD TO har-the-registry.pages.dev -->
-<div style="background:#0a0a0a; border:3px solid #D4AF37; padding:20px; margin:20px 0; color:white; font-family:Arial;">
-  <h2>👑 HOW TO BUY - CUSTOMER'S CHOICE</h2>
-  <p><b>ALL PAYMENTS SEND TO:</b></p>
-  <h3 style="color:#D4AF37;">Orange Money Liberia: +231 776961800</h3>
-  <p><b>Account Name:</b> Registry Pharaoh</p>
-  
-  <div style="display:flex; gap:10px; flex-wrap:wrap; margin:15px 0;">
-    <button onclick="payOrange()" style="padding:12px; background:gold; color:black; border:none; cursor:pointer;">
-      1. Pay Orange Money App
-    </button>
-    <button onclick="payWU()" style="padding:12px; background:white; color:black; border:none; cursor:pointer;">
-      2. Western Union
-    </button>
-    <button onclick="payMG()" style="padding:12px; background:white; color:black; border:none; cursor:pointer;">
-      3. MoneyGram
-    </button>
-  </div>
-
-  <p><b>AFTER PAYMENT:</b> Screenshot + Email to <a href="mailto:orders@pharaoh-conglomerate.org">orders@pharaoh-conglomerate.org</a></p>
-  <p><b>Include:</b> Your Reference # + Email. PDF/Videobook delivered in 5 minutes.</p>
-</div>
-
-<!-- DONATIONS SECTION -->
-<div style="background:#111; border:2px dashed #D4AF37; padding:20px; margin:20px 0; color:white;">
-  <h2>🕊️ DONATE TO 501(c)(3) - HUMANITARIAN AID</h2>
-  <p><b>Need Now:</b> Rice, Water, Bibles, School Supplies for Liberia</p>
-  <p><b>Send To Same Number:</b> Orange Money +231 776961800</p>
-  <button onclick="donate('orange')">Donate via Orange</button>
-  <button onclick="donate('wu')">Donate via WU/MG</button>
-</div>
-
-<script>
-const ORANGE = "+231776961800";
-const ref = new URLSearchParams(window.location.search).get('ref') || 'organic';
-const price = 19.99; // change per product
-
-function payOrange(){
-  alert(`STEP 1: Open Orange Money\nSTEP 2: Send $${price} to ${ORANGE}\nSTEP 3: Reference: ${ref}\nSTEP 4: Email screenshot to us`);
-}
-
-function payWU(){
-  alert(`Send $${price} to: Registry Pharaoh, Monrovia Liberia\nGet MTCN #\nEmail MTCN + ${ref} to orders@pharaoh-conglomerate.org`);
-}
-
-function payMG(){ payWU(); } // same process
-
-function donate(m){
-  alert(`Donation via ${m.toUpperCase()}. Reference: DON-${Date.now()}. Email proof to donations@pharaoh-conglomerate.org`);
-}
-
-// AI AFFILIATE TRACKING
-fetch(`https://angels-hosts-api3.pharangels.workers.dev/track?ref=${ref}&page=har-registry`);
-</script><!-- V8 DIGITAL STORE - FULL CATALOG -->
-<h2 style="color:#D4AF37; text-align:center; margin-top:40px;">👑 THE PHARAOH DIGITAL EMPORIUM</h2>
-<p style="text-align:center;">Instant Delivery After Orange Payment</p>
-
-<div style="display:grid; gap:20px; padding:20px;">
-
-  <!-- PRODUCT 1 -->
-  <div style="border:2px solid #D4AF37; padding:15px; background:#111;">
-    <h3>1. THE UNSEALING OF THE PROPHETS</h3>
-    <p><i>King Pharaoh Translation: Torah, TaNaKh, & The Make Africa Great Again Holy Qur'an</i></p>
-    <p><b>Price:</b> $19.99 USD</p>
-    <p><b>Formats:</b> PDF E-book, Audiobook, Videobook</p>
-  </div>
-
-  <!-- PRODUCT 2 -->
-  <div style="border:2px solid #D4AF37; padding:15px; background:#111;">
-    <h3>2. KING PHARAOH TTS VIDEO SERMONS</h3>
-    <p>Dr. Yancy + Gabe BenYahweh LIVE Teachings</p>
-    <p><b>Price:</b> $9.99 USD per Sermon</p>
-  </div>
-
-  <!-- PRODUCT 3 -->
-  <div style="border:2px solid #D4AF37; padding:15px; background:#111;">
-    <h3>3. PHARAOH CONGLOMERATE REGISTRY ACCESS</h3>
-    <p>Business + Kingdom Consulting 30min Call</p>
-    <p><b>Price:</b> $49.99 USD</p>
-  </div>
-
-  <!-- PRODUCT 4 -->
-  <div style="border:2px solid #D4AF37; padding:15px; background:#111;">
-    <h3>4. WHO DAHT - MUSIC VIDEO SINGLE</h3>
-    <p>Official King Pharaoh Single + Video Download</p>
-    <p><b>Price:</b> $4.99 USD</p>
-  </div>
-
-  <!-- PRODUCT 5 -->
-  <div style="border:2px solid #D4AF37; padding:15px; background:#111;">
-    <h3>5. UNSEALING THE PROPHETS - VIDEOBOOK</h3>
-    <p>Full Book Narrated + Visuals. MP4 Download</p>
-    <p><b>Price:</b> $29.99 USD</p>
-  </div>
-
-  <!-- BUNDLE -->
-  <div style="border:3px solid gold; padding:20px; background:#0a0a0a;">
-    <h3 style="color:gold;">👑 THE PHARAOH BUNDLE - SAVE 40%</h3>
-    <p><b>Includes:</b></p>
-    <ul style="text-align:left;">
-      <li>Autographed PDF of "Unsealing The Prophets"</li>
-      <li>All E-books + New Audiobook Releases</li>
-      <li>New Music Releases</li>
-      <li>Masterclasses Access</li>
-      <li>AFFILIATE PROGRAM: Earn 20% Commission</li>
-    </ul>
-    <p><b>Bundle Price:</b> $99.99 USD</p>
-    <p><b>COMING SOON:</b> Sunauto + ACX Distribution</p>
-  </div>
-
-</div>
-
-<!-- CHECKOUT INSTRUCTIONS -->
-<div style="background:#D4AF37; color:black; padding:15px; margin:20px; text-align:center;">
-  <h3>HOW TO BUY ANY PRODUCT OR BUNDLE</h3>
-  <h2>Orange Money: +231 776961800</h2>
-  <p><b>1. Send Payment</b> | <b>2. Email Screenshot + Product Name</b> to orders@pharaoh-conglomerate.org</p>
-  <p><b>3. Get Instant Download Link</b></p>
-</div>
+<footer class="footer"><div class="container">© 2026 Pharaoh Angels Inc dba Pharaoh Conglomerate.<br>Educational Products Only. Results Vary.<br>Contact: support@pharangels.org</div></footer>
+</body>
 </html>
