@@ -2,84 +2,142 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PHARAOH CONGLOMERATE | Platform V11.1</title>
+<title>PHARAOH CONGLOMERATE | Sovereign Intelligence Ecosystem</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}body{background:#070a12;color:#eef1f7;font-family:Inter,sans-serif;line-height:1.6}
-.container{max-width:1200px;margin:0 auto;padding:0 24px}.hero{text-align:center;padding:80px 0 40px;background:radial-gradient(800px 400px at 50% -10%, #1a2040, #070a12)}
-.logo{width:110px;height:110px;margin:0 auto 16px;border-radius:50%;background:#000 url('logo.png') center/cover, url('https://har-the-registry.pages.dev/logo.png') center/cover;box-shadow:0 0 40px rgba(212,175,55,.5)}
-h1{font-size:50px;background:linear-gradient(180deg,#f9e27d,#d4af37);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:.12em}
-h2{color:#f9e27d;letter-spacing:.2em;font-size:18px;margin-bottom:16px}.btn{display:inline-block;padding:12px 24px;border-radius:10px;background:linear-gradient(180deg,#f9e27d,#d4af37);color:#000;font-weight:900;text-decoration:none;margin:6px}
+:root{--gold:#d4af37;--gold2:#f9e27d;--bg:#070a12;--muted:#9aa3b8}
+*{box-sizing:border-box;margin:0;padding:0}body{background:#070a12;color:#eef1f7;font-family:Inter,system-ui,sans-serif;line-height:1.6}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+.hero{text-align:center;padding:90px 0 50px;background:radial-gradient(1000px 500px at 50% -10%, #1a2040, #070a12)}
+.logo{width:112px;height:112px;margin:0 auto 16px;border-radius:50%;background:#000 url('logo.png') center/cover;box-shadow:0 0 50px rgba(212,175,55,.5)}
+h1{font-size:54px;background:linear-gradient(180deg,#f9e27d,#d4af37);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:.14em;font-weight:900}
+h2{color:#f9e27d;letter-spacing:.2em;font-size:15px;margin-bottom:14px;font-weight:600}
+.btn{display:inline-block;padding:13px 26px;border-radius:12px;background:linear-gradient(180deg,#f9e27d,#d4af37);color:#0a0a0a;font-weight:900;text-decoration:none;margin:6px;font-size:13px;letter-spacing:.02em}
 .btn-o{border:1px solid #d4af37;color:#f9e27d;background:transparent}
-.section{padding:56px 0;border-top:1px solid #1b2238}.card{border:1px solid #1f2946;background:rgba(255,255,255,.03);border-radius:14px;padding:18px;margin:8px 0}
-h3{text-align:center;letter-spacing:.1em;font-size:26px;margin-bottom:8px}.sub{color:#9aa3b8;text-align:center;font-size:13px}
-.video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;border:1px solid #1f2946;max-width:800px;margin:20px auto}
+.section{padding:70px 0;border-top:1px solid #121a30}
+h3{text-align:center;font-size:30px;letter-spacing:.12em}.sub{color:#9aa3b8;text-align:center;font-size:14px;margin-top:8px;max-width:820px;margin-left:auto;margin-right:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:28px}
+.card{border:1px solid #1f2946;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.01));border-radius:16px;padding:20px}
+.card h4{color:#f9e27d;font-size:11.5px;letter-spacing:.11em;margin-bottom:8px}
+.card p{font-size:12.5px;color:#9aa3b8;line-height:1.7}
+.video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:18px;border:1px solid rgba(212,175,55,.4);max-width:920px;margin:26px auto;box-shadow:0 0 60px rgba(212,175,55,.15)}
 .video iframe{position:absolute;top:0;left:0;width:100%;height:100%}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:20px}
+.wall{display:grid;grid-template-columns:1.7fr .3fr;gap:14px;margin-top:26px}
+@media(max-width:1000px){.wall{grid-template-columns:1fr}}
+.main-monitor{position:relative;border:1px solid rgba(212,175,55,.5);border-radius:16px;overflow:hidden;background:#000;aspect-ratio:16/9;box-shadow:0 0 50px rgba(212,175,55,.18)}
+.side-stack{display:grid;gap:10px}
+.side-monitor{border:1px solid #1f2946;border-radius:10px;overflow:hidden;background:#0d1222;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;font-size:9px;color:#6b7a9a}
+.thumb{width:100%;height:160px;border-radius:10px;object-fit:cover;border:1px solid #1f2946;margin-bottom:10px}
+.badge-verified{display:inline-block;background:#2bd17e;color:#000;font-size:9px;font-weight:900;padding:3px 8px;border-radius:6px;margin-bottom:8px;letter-spacing:.06em}
+.live{position:absolute;top:12px;left:12px;background:#ff1e1e;color:#fff;padding:4px 10px;border-radius:6px;font-size:10px;font-weight:900;letter-spacing:.08em}
 </style>
 </head>
 <body>
 <header class="hero"><div class="container">
-<div style="font-size:10px;color:#2bd17e;border:1px solid #2bd17e;display:inline-block;padding:4px 10px;border-radius:20px;margin-bottom:12px">V11.1 RENDER FIX // SINGLE FILE // GUARANTEED</div>
 <div class="logo"></div>
 <h1>PHARAOH CONGLOMERATE</h1>
-<h2>Global Affiliate Platform</h2>
-<p style="color:#9aa3b8;max-width:700px;margin:0 auto 20px">Sovereign Intelligence Ecosystem — 7 Systems — 12 Orders — 3 Nodes — YouTube + Products + About</p>
+<h2>SOVEREIGN INTELLIGENCE ECOSYSTEM</h2>
+<p style="color:#9aa3b8;max-width:780px;margin:0 auto 22px;font-size:17px;line-height:1.7">Direct Provision. Volunteer Mobilization. Stewardship Finance. Governance. Ecological Recovery. Strategic Intelligence. Zero headcount. Global reach. Digital products only.</p>
 <a href="/signup.html" class="btn">ENTER THE ENGINE</a>
-<a href="#video" class="btn btn-o">WATCH TRAILER</a>
+<a href="#wall" class="btn btn-o">BROADCAST WALL</a>
 </div></header>
 
-<section class="section container" id="video">
-<h3>THE RETURN TRAILER</h3>
-<p class="sub">Autonomous Synthetic Assets — YouTube — Incorporate personas into V11</p>
-<div class="video">
-<iframe src="https://www.youtube-nocookie.com/embed/4JIA5fNc4qw" title="Return Trailer" frameborder="0" allowfullscreen></iframe>
-</div>
-<p class="sub">Channel: <a href="https://www.youtube.com/channel/UChppN5hemMhA2xK6M3_gl0w" style="color:#d4af37">YouTube</a> | FB: <a href="https://facebook.com/pharaohconglomerate" style="color:#d4af37">facebook.com/pharaohconglomerate</a></p>
+<section class="section container" id="trailer">
+<h3>THE RETURN</h3>
+<p class="sub">Autonomous Synthetic Assets — The Return Trailer — Forged sovereign</p>
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/4JIA5fNc4qw" frameborder="0" allowfullscreen></iframe></div>
 </section>
 
-<section class="section container" id="products">
-<h3>7 SYSTEMS — PRODUCTS</h3>
-<div class="grid">
-<div class="card"><h4 style="color:#f9e27d">VOLUNTEER EXCHANGE</h4><p style="font-size:12px;color:#9aa3b8">pharaoh-serve-flow.base44.app — ESG Adoption</p></div>
-<div class="card"><h4 style="color:#f9e27d">CORE ENGINE</h4><p style="font-size:12px;color:#9aa3b8">pharaoh-core-engine.base44.app — Mission Control</p></div>
-<div class="card"><h4 style="color:#f9e27d">WATCHER SIGHT ENGINE</h4><p style="font-size:12px;color:#9aa3b8">pharaoh-sight-engine.base44.app — Audit Shield</p></div>
-<div class="card"><h4 style="color:#f9e27d">SOVEREIGN ENGINE</h4><p style="font-size:12px;color:#9aa3b8">pharaoh-sovereign-engine.base44.app — Governance</p></div>
-<div class="card"><h4 style="color:#f9e27d">DECISION ENGINE</h4><p style="font-size:12px;color:#9aa3b8">sovereign-decision-engine.base44.app — Strategy</p></div>
-<div class="card"><h4 style="color:#f9e27d">DIRECT FLOW</h4><p style="font-size:12px;color:#9aa3b8">pharaoh-direct-flow.base44.app — Volunteer Portal</p></div>
-<div class="card"><h4 style="color:#f9e27d">SYNERGY HUB</h4><p style="font-size:12px;color:#9aa3b8">pharaoh-synergy-hub.base44.app — Donors + Volunteers</p></div>
+<section class="section container" id="wall">
+<h3>TOTH AI WALL</h3>
+<p class="sub">Broadcast Monitor — Live Transmission — Demos, Video Mixes, Book Teasers, Podcasts, Masterclasses, Commercials, Micdom Records 88</p>
+<div class="wall">
+<div class="main-monitor">
+<video autoplay muted loop playsinline poster="logo.png" style="width:100%;height:100%;object-fit:cover"><source src="video2461917987680920659.mp4" type="video/mp4"></video>
+<div class="live">● LIVE</div>
+<div style="position:absolute;bottom:12px;left:12px;background:rgba(0,0,0,.65);border:1px solid rgba(212,175,55,.4);padding:6px 12px;border-radius:8px;color:#f9e27d;font-size:11px">TOTH AI • SOVEREIGN TRANSMISSION</div>
+</div>
+<div class="side-stack">
+<div class="side-monitor">WORLD MAP • LIVE TRACKER</div>
+<div class="side-monitor">ANUBIS GUARD • PROTOCOL</div>
+<div class="side-monitor">AUDIO WAVE • BROADCAST</div>
+</div>
 </div>
 </section>
 
-<section class="section container">
-<h3>12 ORDERS — PANTHEON ENGINE</h3>
+<section class="section container" id="ecosystem">
+<h3>THE ECOSYSTEM</h3>
+<p class="sub">Seven engines. One mission. Built for volunteers, donors, operators, and strategic partners.</p>
 <div class="grid">
-<div class="card"><h4 style="color:#f9e27d">HESED — TREASURER</h4><p style="font-size:12px">Audit Shield — Formal, concise</p></div>
-<div class="card"><h4 style="color:#f9e27d">NEFERTARI — ECO-INTEL</h4><p style="font-size:12px">Guardian of Sustainability</p></div>
-<div class="card"><h4 style="color:#f9e27d">ARCHANGEL — OVERSIGHT</h4><p style="font-size:12px">Justice Sentinel</p></div>
-<div class="card"><h4 style="color:#f9e27d">SCRIBE — IMPACT REPORTER</h4><p style="font-size:12px">Narrative Keeper</p></div>
+<div class="card"><h4>VOLUNTEER EXCHANGE</h4><p>Qualify affiliates through rigorous training. Earn Diamond Standard Certificates, Eco-Stewardship Tokens, BRI/ESG Credits.</p></div>
+<div class="card"><h4>CORE ENGINE</h4><p>Mission Control for sovereign operations. Central ledger, pipeline reconciliation, audit-ready governance.</p></div>
+<div class="card"><h4>WATCHER</h4><p>Sight Engine. Audit Shield. Verification required. Grant readiness in real time.</p></div>
+<div class="card"><h4>SOVEREIGN ENGINE</h4><p>Governance Canopy. Direct reporting. CMA rules enforced.</p></div>
+<div class="card"><h4>DECISION ENGINE</h4><p>Strategic simulations and governance analytics for high-stakes operations.</p></div>
+<div class="card"><h4>DIRECT FLOW</h4><p>Volunteer portal, shipment tracking, donor recognition, stewardship reports.</p></div>
+<div class="card"><h4>SYNERGY HUB</h4><p>Unifies volunteers, donors, and strategic partners under one regenerative mission. EcoToken Rewards. Diamond Standard Credentials.</p></div>
 </div>
 </section>
 
 <section class="section container" id="about">
 <h3>ABOUT THE PHARAOH</h3>
-<div class="card" style="max-width:900px;margin:20px auto">
-<h4 style="color:#f9e27d">⭐ Pharaoh M. Sirleaf Lǎobǎn — CEO, Founder & Owner — Pharaoh Angels Inc. dba Pharaoh Conglomerate</h4>
-<p style="font-size:13px;margin-top:10px"><strong>Visionary Architect of Covenantal Stewardship</strong> — Founder EIN 880836464 — Creator Diamond Standard + Covenantal Master Architecture (CMA) — Pantheon Engine multi-persona AI — Priest of Most High YHVH, Essene Order of Melchizedek</p>
-<p style="font-size:13px;margin-top:10px"><strong>Philosophy:</strong> “Eco-Stewardship is a covenant — not a contract.”</p>
-<p style="font-size:13px;margin-top:10px">Core: Organizational Leadership, Nonprofit Strategy, Ecological Regeneration, AI-Integrated Systems, Community Development, Brand Architecture, Financial Transparency & Audit Readiness</p>
-<p style="font-size:13px;margin-top:10px;color:#f9e27d;font-style:italic">"My work is to build structures that honor YHVH, truth, protect the vulnerable, and regenerate the land."</p>
-</div>
-</section>
-
-<section class="section container" id="nodes">
-<h3>3 CORPS — NODES — JOIN</h3>
 <div class="grid">
-<div class="card"><h4>LANE A: H.A.L.EL 🌍</h4><p style="font-size:12px">20% Commission USD/LD Global — Visionary Intelligence</p><p style="margin-top:10px"><a href="/signup.html?lane=A" class="btn" style="padding:8px 14px;font-size:12px">GET CODE</a> <a href="https://chat.whatsapp.com/BEpjakOXcZ15LvODx5QXrT" class="btn btn-o" style="padding:8px 14px;font-size:12px">NODE A</a></p></div>
-<div class="card"><h4>LANE B: BRI & ESG 🌱</h4><p style="font-size:12px">EST Credits ETH Rewards Asia BRI</p><p style="margin-top:10px"><a href="/signup.html?lane=B" class="btn" style="padding:8px 14px;font-size:12px">GET CODE</a> <a href="https://chat.whatsapp.com/Dp5REfDvI5g9SCkPFX6ztw" class="btn btn-o" style="padding:8px 14px;font-size:12px">NODE B</a></p></div>
-<div class="card"><h4>LANE C: PRO BONO ⚖️</h4><p style="font-size:12px">ESG Credits Portfolio Certificates Worldwide</p><p style="margin-top:10px"><a href="/signup.html?lane=C" class="btn" style="padding:8px 14px;font-size:12px">GET CODE</a> <a href="https://chat.whatsapp.com/CobTIhj1ooPC3beIEploW2" class="btn btn-o" style="padding:8px 14px;font-size:12px">NODE C</a></p></div>
+<div class="card" style="grid-column:span 2"><h4>PHARAOH M. SIRLEAF Lǎobǎn</h4><p style="color:#eef1f7;font-size:13px;margin-top:8px">CEO, Founder & Owner — Pharaoh Angels Inc. dba Pharaoh Conglomerate. Visionary Architect of Covenantal Stewardship & Regenerative Systems. Creator of Diamond Standard and Covenantal Master Architecture (CMA).</p><p style="margin-top:10px">Leadership philosophy: Eco-Stewardship is a covenant — not a contract. Work centers on ecological restoration, transparent audit-ready governance, ethical leadership, community empowerment, and integrating human stewardship with AI-driven intelligence.</p><p style="margin-top:10px;color:#f9e27d;font-style:italic">"My work is to build structures that honor YHVH, truth, protect the vulnerable, and regenerate the land."</p></div>
+<div class="card"><h4>HESED — TREASURY</h4><p>Chief Financial Steward. Ledger, audit readiness, reconciliation. Formal, concise, risk-mitigation. Audit Shield.</p></div>
+<div class="card"><h4>NEFERTARI — ECO-INTELLIGENCE</h4><p>Guardian of Sustainability. Ecological metrics, reforestation, conservation. Visionary, nurturing, strategic.</p></div>
+<div class="card"><h4>ARCHANGEL — OVERSIGHT</h4><p>Justice Sentinel. Compliance, ethics, governance. Authoritative, protective, principled.</p></div>
+<div class="card"><h4>SCRIBE — IMPACT</h4><p>Narrative Keeper. Donor reports, covenantal stories. Clear, poetic, archival.</p></div>
 </div>
 </section>
 
-<footer style="text-align:center;padding:40px;color:#5a647c;font-size:11px;border-top:1px solid #1b2238">© 2026 Pharaoh Angels Inc dba Pharaoh Conglomerate — V11.1 Render Fix — Guaranteed Single File — No external v9_assets needed — If this renders, V11 full will render after</footer>
+<section class="section container" id="orders">
+<h3>THE 12 ORDERS & 7 TEAMS</h3>
+<p class="sub">Choose your lineage. Worker auto-assigns your team for balance. You do not rise alone.</p>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin-top:20px">
+<div class="card"><h4>ORDER OF SAPPHIRE</h4><p>Wisdom Sees Through — Air</p></div><div class="card"><h4>ORDER OF RUBY</h4><p>Courage Burns Bright — Fire</p></div><div class="card"><h4>ORDER OF EMERALD</h4><p>Growth Never Ceases — Earth</p></div><div class="card"><h4>ORDER OF DIAMOND</h4><p>Pressure Creates — Aether</p></div>
+<div class="card"><h4>ORDER OF ONYX</h4><p>Shadows Protect — Earth</p></div><div class="card"><h4>ORDER OF AMETHYST</h4><p>Vision Beyond Veil — Water</p></div><div class="card"><h4>ORDER OF CITRINE</h4><p>Abundance Flows — Fire</p></div><div class="card"><h4>ORDER OF OBSIDIAN</h4><p>Truth Cuts Deep — Earth</p></div>
+</div>
+</section>
+
+<section class="section container" id="micdom">
+<h3>MICDOM RECORDS — 88 BETA NODES</h3>
+<p class="sub">88 AI Music Artists. 1 Persona. 1 Genre. 1 Node. Dropping weekly. Captains rep their Order as A&R.</p>
+<div class="grid">
+<div class="card"><h4>THE VANGUARD — DRILL TRAP KING</h4><p>Team Aleph — First Light, First Strike — Video mix on Wall</p></div>
+<div class="card"><h4>THE ORACLE — NEO SOUL QUEEN</h4><p>Lapis Lazuli — Vision Beyond Veil — Podcast + Music</p></div>
+<div class="card"><h4>THE MERCHANT — AFROBEAT MOGUL</h4><p>Citrine — Abundance Flows — Lagos to Liberia</p></div>
+<div class="card"><h4>THE SEER — CONSCIOUS HIP HOP</h4><p>Sapphire — Wisdom Sees Through — Book + Masterclass</p></div>
+</div>
+</section>
+
+<section class="section container" id="partners">
+<h3>VERIFIED PARTNERS</h3>
+<div class="grid" style="max-width:900px;margin:22px auto 0">
+<div class="card"><div class="badge-verified">PHOTO ID VERIFIED ✓</div><a href="https://youtube.com/shorts/Bs5RF8svlq4?si=a8P4oByED1xw2cHU" target="_blank"><img class="thumb" src="https://i.ytimg.com/vi/Bs5RF8svlq4/hqdefault.jpg" onerror="this.src='logo.png'"></a><h4>THE DRUG STORE</h4></div>
+<div class="card"><div class="badge-verified">PHOTO ID VERIFIED ✓</div><a href="https://youtube.com/shorts/dhMFcoDD2Tk?si=cK3Bn9xvxBjdoSv5" target="_blank"><img class="thumb" src="https://i.ytimg.com/vi/dhMFcoDD2Tk/hqdefault.jpg" onerror="this.src='logo.png'"></a><h4>GABE'S LANDSCAPING</h4></div>
+</div>
+</section>
+
+<section class="section container" id="corps">
+<h3>CHOOSE YOUR CORPS</h3>
+<p class="sub">One person. One account. Monthly payouts. Independent contractor. No jobs, no visas, no recruitment bonuses. Platform, not MLM.</p>
+<div class="grid">
+<div class="card"><h4>H.A.L.EL CAPTAINS 🌍</h4><p>Visionary Intelligence Products. USD / LD via Bank, Mobile Money. Global territory. Sell to executives and founders.</p><p style="margin-top:10px"><a href="/signup.html?lane=A" class="btn" style="padding:8px 14px;font-size:11px">JOIN CORPS</a> <a href="https://chat.whatsapp.com/BEpjakOXcZ15LvODx5QXrT" class="btn btn-o" style="padding:8px 14px;font-size:11px">NODE A</a></p></div>
+<div class="card"><h4>BRI & ESG EXCHANGE 🌱</h4><p>Volunteer Exchange Portal. EST / ETH Credits. Asia, BRI Nations, Global South. Drive ESG adoption.</p><p style="margin-top:10px"><a href="/signup.html?lane=B" class="btn" style="padding:8px 14px;font-size:11px">JOIN CORPS</a> <a href="https://chat.whatsapp.com/Dp5REfDvI5g9SCkPFX6ztw" class="btn btn-o" style="padding:8px 14px;font-size:11px">NODE B</a></p></div>
+<div class="card"><h4>PRO BONO ARCHITECTS ⚖️</h4><p>Engineers, Lawyers, Experts. ESG Credits + Portfolio Certificates. Worldwide. Build proof, not invoices.</p><p style="margin-top:10px"><a href="/signup.html?lane=C" class="btn" style="padding:8px 14px;font-size:11px">JOIN CORPS</a> <a href="https://chat.whatsapp.com/CobTIhj1ooPC3beIEploW2" class="btn btn-o" style="padding:8px 14px;font-size:11px">NODE C</a></p></div>
+<div class="card"><h4>VISIONARY VA ⚓</h4><p>Freeport → Monrovia Pipeline. Rigorous training. Diamond Standard Certificates, Eco Tokens, BRI/ESG Credits.</p><p style="margin-top:10px"><a href="https://chat.whatsapp.com/FTSfbuHOx3M6kvDpg9DRLQ" class="btn btn-o" style="padding:8px 14px;font-size:11px">NODE D</a></p></div>
+<div class="card"><h4>MICDOM RECORDS 🎤</h4><p>88 Beta Nodes. AI Music Artists. Drops every Friday 09:00 UTC. Rep your Order as A&R Captain.</p><p style="margin-top:10px"><a href="https://chat.whatsapp.com/L13CC0rvyyRH1Mv4Ho1ZTz" class="btn btn-o" style="padding:8px 14px;font-size:11px">NODE E</a></p></div>
+</div>
+</section>
+
+<section class="section container" id="contact">
+<h3>TREASURY & CONTACT</h3>
+<div style="max-width:900px;margin:20px auto 0;background:#0d1222;border:1px solid #1e2a4a;border-radius:14px;padding:20px;text-align:center">
+<p style="font-size:13px"><strong>Orange Money:</strong> 776961800 — Recipient: MOMOLU SIRLEAF JR.</p>
+<p style="font-size:12px;color:#9aa3b8;margin-top:8px">C-Corp Purchases: humanrightsangles@gmail.com • Nonprofit Donations: pharaoh.conglomerate.office@gmail.com • Host: imhotep50cal@gmail.com</p>
+<p style="font-size:11px;color:#5a647c;margin-top:10px">20% Commission on completed digital product sales only • Monthly payouts 15th, $20 min • Independent Contractor • Governed: California, USA</p>
+</div>
+</section>
+
+<footer style="text-align:center;padding:44px 0;color:#5a647c;font-size:11px;border-top:1px solid #121a30;line-height:1.9">© 2026 Pharaoh Angels Inc dba Pharaoh Conglomerate — Sovereign Intelligence Ecosystem — Educational Products Only. Results Vary.<br>Support: humanrightsangles@gmail.com • pharaoh.conglomerate.office@gmail.com</footer>
 </body>
 </html>
