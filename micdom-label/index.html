@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Micdom Records AI - Human Rights Angels Registry</title>
+<style>
+body{background:#0a0a0a;color:#00ff88;font-family:'Courier New';padding:20px}
+h1{color:#ff0044;text-shadow:0 0 10px #ff0044}
+.card{background:#111;border:1px solid #00ff88;padding:15px;margin:10px 0;border-radius:8px}
+button{background:#ff0044;color:#000;border:none;padding:10px 20px;font-weight:bold;cursor:pointer}
+input,textarea{width:100%;background:#000;color:#00ff88;border:1px solid #00ff88;padding:8px;margin:5px 0}
+</style>
+</head>
+<body>
+<h1>👑 MICDOM RECORDS AI LABEL 👑</h1>
+<h3>Powered by HumanRightsAngels Registry + Base44 + MusicGen</h3>
+
+<div class="card">
+<h2>Generate Kingdom Drill Track</h2>
+<input id="prompt" placeholder="Enter prompt: Kingdom Drill 145bpm prophetic">
+<button onclick="generate()">BANG! GENERATE</button>
+<audio id="player" controls></audio>
+</div>
+
+<div class="card">
+<h2>88 Autonomous Synthetic Artists</h2>
+<div id="roster">Loading Micdom Roster...</div>
+</div>
+
+<script>
+const HF_TOKEN = "hf_YOUR_TOKEN_HERE"; // Add your HuggingFace token
+
+async function generate(){
+  const prompt = document.getElementById('prompt').value;
+  document.getElementById('player').src = "";
+  alert("Generating with MusicGen... 60s");
+  
+  const res = await fetch("https://api-inference.huggingface.co/models/facebook/musicgen-medium",{
+    method:"POST",
+    headers:{Authorization:`Bearer ${HF_TOKEN}`,"Content-Type":"application/json"},
+    body:JSON.stringify({inputs:prompt})
+  });
+  const blob = await res.blob();
+  document.getElementById('player').src = URL.createObjectURL(blob);
+}
+
+const artists = ["King Von","Drake","Pop Smoke","Kendrick","21 Savage","Rihanna","Beyonce","Nicki","Mary J","Rod Wave"];
+document.getElementById('roster').innerHTML = artists.map(a=>`<div>${a} - Autonomous Asset</div>`).join("");
+</script>
+</body>
+</html>
