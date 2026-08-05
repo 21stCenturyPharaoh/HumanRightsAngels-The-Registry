@@ -1,0 +1,26 @@
+{
+  "asset_name": "Micdom Kolokwa Glossary v1.0",
+  "owner": "Pharaoh Conglomerate",
+  "license": "Sovereign Proprietary - All Rights Reserved",
+  "version": "1.0",
+  "language": "Liberian Kolokwa English",
+  "dictionary": {
+    "enneh so?": "right? / isn't it?",
+    "wahala": "trouble",
+    "gronah": "tough/resilient",
+    "big jue": "deep strength",
+    "da pekin dem": "our people",
+    "nah": "not/don't",
+    "palm butter": "protection/bond",
+    "fufu": "unshakeable faith",
+    "jollof": "covenant/blood",
+    "day": "the",
+    "everay": "every",
+    "jeh": "just",
+    "geh": "get",
+    "Bang": "NOT TRANSLATED - ADLIB",
+    "grrah": "NOT TRANSLATED - ADLIB",
+    "Ma": "NOT TRANSLATED - ADLIB"
+  },
+  "usage": "For caption generation, voice synthesis, and translation engine across all Pharaoh Conglomerate digital products."
+}
