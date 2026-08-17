@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HumanRightsAngels — The Registry | The Pharaoh Conglomerate V26</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+:root{--gold:#D4AF37;--black:#0a0a0a;--green:#25D366;--blue:#0084FF}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#070707;color:#fff;line-height:1.6}
+header{text-align:center;padding:30px 15px;background:linear-gradient(180deg,#111 0%,#000 100%);border-bottom:3px solid var(--gold)}
+header img.logo{width:110px;filter:drop-shadow(0 0 12px rgba(212,175,55,0.5))}
+header h1{color:var(--gold);letter-spacing:3px;margin:15px 0 5px;font-size:28px}
+header p.sub{opacity:.7;font-size:13px}
+.hero{padding:40px 15px;text-align:center;max-width:900px;margin:0 auto}
+.hero h2{font-size:32px;color:var(--gold);margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;padding:20px;max-width:1200px;margin:0 auto}
+.card{background:#121212;border:1px solid #222;border-radius:16px;overflow:hidden;transition:.3s}
+.card:hover{border-color:var(--gold);transform:translateY(-4px)}
+.card img{width:100%;height:280px;object-fit:cover;display:block}
+.card .info{padding:14px}
+.card .info h3{color:var(--gold);font-size:16px;margin-bottom:6px}
+.card .info p{font-size:12px;opacity:.7}
+.music{background:#0f0f0f;border:1px solid #1f1f1f;border-radius:18px;padding:22px;margin:30px auto;max-width:1100px}
+.music h3{color:var(--gold);text-align:center;margin-bottom:14px;letter-spacing:2px}
+.music-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.music-grid iframe{width:100%;height:420px;border-radius:12px;border:none;background:#000}
+@media(max-width:700px){.music-grid{grid-template-columns:1fr}.music-grid iframe{height:500px}}
+.art{background:#0a0a0a;padding:20px}
+.art h3{color:var(--gold);text-align:center;margin:10px 0 18px;letter-spacing:2px}
+.art-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;max-width:1200px;margin:0 auto}
+.art-grid img{width:100%;height:200px;object-fit:cover;border-radius:10px;border:1px solid #222}
+footer{background:#050505;color:#f5f5f5;padding:42px 18px;text-align:center;border-top:3px solid var(--gold);margin-top:50px}
+footer a{color:var(--gold);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.badge{display:inline-block;background:var(--gold);color:#000;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;letter-spacing:1px;margin:5px}
+
+.v26-section{max-width:1200px;margin:38px auto;padding:0 20px}
+.v26-title{text-align:center;color:var(--gold);letter-spacing:2px;margin-bottom:10px;font-size:25px}
+.v26-lead{text-align:center;opacity:.78;max-width:850px;margin:0 auto 20px}
+.v26-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.v26-card{background:linear-gradient(145deg,#171717,#0b0b0b);border:1px solid #292929;border-radius:18px;padding:20px;box-shadow:0 8px 30px rgba(0,0,0,.28)}
+.v26-card h3{color:var(--gold);margin-bottom:8px}
+.v26-card p,.v26-card li{font-size:13px;opacity:.82}
+.v26-card ul{padding-left:18px}
+.price{font-size:28px;color:var(--gold);font-weight:800}
+.ld{font-size:13px;opacity:.65}
+.cta{display:inline-block;background:var(--gold);color:#000;padding:10px 16px;border-radius:24px;font-weight:800;text-decoration:none;margin-top:10px}
+.cta.alt{background:#151515;color:var(--gold);border:1px solid var(--gold)}
+.profile{display:grid;grid-template-columns:minmax(220px,360px) 1fr;gap:24px;align-items:center}
+.profile img{width:100%;height:390px;object-fit:cover;border-radius:20px;border:2px solid var(--gold);box-shadow:0 0 30px rgba(212,175,55,.2)}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0}
+.pill{border:1px solid #3b3b3b;border-radius:20px;padding:5px 10px;font-size:11px;color:#ddd}
+.book{display:flex;gap:16px;align-items:center}
+.book-cover{width:105px;height:150px;object-fit:cover;border-radius:8px;border:1px solid #333}
+.price-row{display:flex;gap:18px;flex-wrap:wrap;margin:12px 0}
+.price-box{background:#0c0c0c;border:1px solid #292929;border-radius:12px;padding:10px 14px}
+.wa{color:var(--green);font-weight:800;text-decoration:none}
+.temple-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+.temple{background:#0c0c0c;border:1px solid #242424;border-radius:12px;padding:13px}
+.temple a{color:var(--green);text-decoration:none;font-weight:700}
+.disclaimer{font-size:11px;opacity:.58;max-width:900px;margin:20px auto;line-height:1.55}
+@media(max-width:700px){.profile{grid-template-columns:1fr}.profile img{height:330px}.book{align-items:flex-start}.book-cover{width:85px;height:125px}}
+</style>
+</head>
+<body>
+
+<header>
+  <img class="logo" src="HumanRightsAngels-The-Registry_files/receive_8kB.png" alt="Pharaoh Diamond Anchor" onerror="this.src='kingdom_art/kingdom-page-01.jpg'">
+  <h1>THE PHARAOH CONGLOMERATE LLC</h1>
+  <p class="sub">HumanRightsAngels — The Registry | V26 • Corporate Business Infrastructure • Kingdom Is Live LǍOBǍN 🫡</p>
+  <div style="margin-top:12px">
+    <span class="badge">IRS 501(c)(3) VERIFIED</span>
+    <span class="badge">WHATSAPP BUSINESS VERIFIED</span>
+    <span class="badge">CLOUD NATIVE</span>
+  </div>
+</header>
+
+<div class="hero">
+  <h2>Commerce Theater • Registry of Kings</h2>
+  <p style="opacity:.8">V25.3 restores the missing assets: Dr. Yancy's Drug Store, Gabe's Landscaping, V2's Business Center, Fe's Business Center, Derrina Evening Wear, Mosetta's Online Liberian Restaurant + Bendu K. Massaley & Ambassador Chris Collins. No more storage-full. Built on Blackview A52 Pro → kingdom-drive.</p>
+</div>
+
+<!-- V26 CORPORATE REGISTRY -->
+<section class="v26-section" id="corporate-registry">
+  <h2 class="v26-title">👑 CORPORATE REGISTRY • V26</h2>
+  <p class="v26-lead">
+    Corporate services • Digital infrastructure • Algorithm Accelerator • Strategic partners • Affiliate network.
+    Build your business, connect your business, and accelerate your business through one ecosystem.
+  </p>
+
+  <div class="v26-grid">
+    <div class="v26-card">
+      <h3>REGISTRY BASIC</h3>
+      <div class="price">$49 <span class="ld">/ ≈ L$8,900</span></div>
+      <p>Digital business presence inside the Pharaoh Corporate Registry.</p>
+      <ul><li>Business profile</li><li>Business category</li><li>Website/social links</li><li>Affiliate eligibility review</li></ul>
+    </div>
+    <div class="v26-card">
+      <h3>REGISTRY PROFESSIONAL</h3>
+      <div class="price">$99 <span class="ld">/ ≈ L$18,000</span></div>
+      <p>Enhanced visibility and network participation.</p>
+      <ul><li>Enhanced Registry profile</li><li>Partner consideration</li><li>Affiliate profile</li><li>Referral opportunities</li><li>Algorithm Accelerator eligibility</li></ul>
+    </div>
+    <div class="v26-card">
+      <h3>CORPORATE LAUNCH</h3>
+      <div class="price">$249 <span class="ld">/ ≈ L$45,000</span></div>
+      <p>Corporate-document and formation workflow with qualified service-provider coordination.</p>
+      <ul><li>Registry Professional</li><li>Corporate document workflow</li><li>Filing coordination</li><li>Registered-Agent coordination where applicable</li><li>Affiliate onboarding</li></ul>
+    </div>
+    <div class="v26-card">
+      <h3>CORPORATE GROWTH ⭐</h3>
+      <div class="price">$499 <span class="ld">/ ≈ L$90,000</span></div>
+      <p>Corporate services plus digital business infrastructure.</p>
+      <ul><li>Corporate Launch</li><li>Website/landing-page deployment</li><li>Domain/email routing assistance</li><li>Automation setup</li><li>Affiliate campaign setup</li><li>Strategic matching</li></ul>
+    </div>
+    <div class="v26-card">
+      <h3>CORPORATE ECOSYSTEM 👑</h3>
+      <div class="price">$999 <span class="ld">/ ≈ L$180,000</span></div>
+      <p>Premium ecosystem infrastructure for businesses ready to scale.</p>
+      <ul><li>Corporate Growth</li><li>Advanced automation</li><li>Affiliate/referral infrastructure</li><li>Priority Registry placement</li><li>Business-development infrastructure</li><li>Priority support</li></ul>
+    </div>
+  </div>
+  <p class="disclaimer">
+    USD/LD figures are indicative rounded conversions. Government filing fees, Registered Agent fees,
+    domains, hosting upgrades, professional fees and other third-party charges may be separate.
+    Services and availability vary by jurisdiction and provider.
+  </p>
+</section>
+
+<section class="v26-section" id="founder">
+  <div class="profile">
+    <img src="HumanRightsAngels-The-Registry_files/founder-red-shirt.jpg"
+         alt="Pharaoh M. Sirleaf Lǎobǎn — Founder"
+         onerror="this.style.display='none'">
+    <div>
+      <h2 class="v26-title" style="text-align:left">ABOUT PHARAOH — FOUNDER & ARCHITECT</h2>
+      <h3 style="color:var(--gold);font-size:21px">⭐ Pharaoh M. Sirleaf Lǎobǎn</h3>
+      <p style="margin:5px 0 12px">CEO, Founder & Owner — Pharaoh Angels Inc. • EIN 880836464</p>
+      <p style="opacity:.8">Visionary Architect of Covenantal Stewardship — Diamond Standard + CMA • Pantheon Engine • Priest of Most High YHVH, Essene Order of Melchizedek</p>
+      <p style="margin-top:14px;font-style:italic;color:#ddd">“Eco-Stewardship is a covenant — not a contract.”</p>
+      <div class="pills">
+        <span class="pill">Leadership</span><span class="pill">Nonprofit Strategy</span>
+        <span class="pill">Ecological Regeneration</span><span class="pill">AI Systems</span>
+        <span class="pill">Community Dev</span><span class="pill">Brand Arch</span><span class="pill">Audit Readiness</span>
+      </div>
+      <p style="opacity:.8">“My work is to build structures that honor YHVH...”</p>
+      <div style="margin-top:8px">
+        <span class="badge">VERIFIED AUTHOR ✓</span>
+        <span class="badge">KDP LIVE</span>
+        <span class="badge">ORDER OF MELCHIZEDEK</span>
+      </div>
+      <div style="margin-top:10px">
+        <a class="cta" href="#books">GET THE BOOK</a>
+        <a class="cta alt" href="https://www.youtube.com/" target="_blank" rel="noopener">WATCH RETURN TRAILER</a>
+        <a class="cta alt" href="#engine">ENTER THE ENGINE</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="v26-section" id="books">
+  <h2 class="v26-title">📚 PHARAOH KDP STACK</h2>
+  <p class="v26-lead">Book 1 is live. Book 2 is in review with the new paperback drop in the King Pharaoh Codex.</p>
+  <div class="v26-grid">
+    <div class="v26-card book">
+      <img class="book-cover" src="HumanRightsAngels-The-Registry_files/book1-cover.jpg" alt="Book 1 cover" onerror="this.style.display='none'">
+      <div>
+        <h3>BOOK 1 — LIVE</h3>
+        <div class="price-row">
+          <div class="price-box">Kindle <strong>$9.99</strong></div>
+          <div class="price-box">Paperback <strong>$19.99</strong></div>
+        </div>
+        <a class="cta" href="https://www.amazon.com/dp/B0B3H8886Z" target="_blank" rel="noopener">VIEW KINDLE ON AMAZON</a>
+        <a class="cta alt" href="https://www.amazon.com/dp/B0B45XMBZW" target="_blank" rel="noopener">VIEW PAPERBACK ON AMAZON</a>
+      </div>
+    </div>
+    <div class="v26-card">
+      <h3>BOOK 2 — IN REVIEW</h3>
+      <p>Modified August 13, 2026. New paperback drop in the King Pharaoh Codex.</p>
+      <span class="badge">KDP REVIEW</span>
+    </div>
+  </div>
+</section>
+
+<section class="v26-section" id="partners">
+  <h2 class="v26-title">🤝 VERIFIED / STRATEGIC PARTNERS</h2>
+  <div class="v26-grid">
+    <div class="v26-card">
+      <h3>UNIQUE BUSINESS SOLUTIONS INC.</h3>
+      <p><strong>Jeanette Waters — CEO</strong></p>
+      <p>Strategic corporate-services partner. Corporate document preparation, filing coordination and applicable professional services are subject to jurisdiction and provider requirements.</p>
+      <a class="cta alt" href="https://letgodhelp.org/" target="_blank" rel="noopener">LET GOD HELP RESOURCES</a>
+    </div>
+    <div class="v26-card">
+      <h3>NORTHWEST REGISTERED AGENT</h3>
+      <p>Registered Agent infrastructure can be offered through an approved partner/affiliate or wholesale arrangement, subject to Northwest terms, jurisdiction and eligibility.</p>
+      <a class="cta alt" href="https://www.northwestregisteredagent.com/registered-agent" target="_blank" rel="noopener">REGISTERED AGENT INFO</a>
+    </div>
+  </div>
+</section>
+
+<section class="v26-section" id="engine">
+  <h2 class="v26-title">⚙️ ALGORITHM ACCELERATOR + AFFILIATE ENGINE</h2>
+  <p class="v26-lead">The Registry is designed to connect participating businesses with automation, referrals, strategic partners, campaigns and qualifying affiliate opportunities.</p>
+  <div class="v26-grid">
+    <div class="v26-card"><h3>DISCOVER</h3><p>Business profiles, partners, products and opportunities.</p></div>
+    <div class="v26-card"><h3>MATCH</h3><p>Connect complementary businesses and services.</p></div>
+    <div class="v26-card"><h3>PROMOTE</h3><p>Participate in qualifying campaigns and affiliate offers.</p></div>
+    <div class="v26-card"><h3>TRACK</h3><p>Use referral attribution and campaign tracking where available.</p></div>
+  </div>
+</section>
+
+<section class="v26-section" id="video">
+  <h2 class="v26-title">🎬 PHARAOH REGISTRY — EXPLAINER / COMMERCIAL</h2>
+  <p class="v26-lead">The cinematic Registry explainer can be hosted on YouTube and embedded here for customers and affiliates.</p>
+  <div class="music">
+    <div class="music-grid">
+      <iframe src="https://www.youtube.com/embed?rel=0" title="Pharaoh Conglomerate Registry Explainer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="v26-section" id="whatsapp-temples">
+  <h2 class="v26-title">📱 WHATSAPP TEMPLES / BUSINESS CHANNELS</h2>
+  <div class="temple-grid">
+    <div class="temple"><strong>MICDOM</strong><br><a href="https://wa.me/" target="_blank" rel="noopener">Open WhatsApp</a></div>
+    <div class="temple"><strong>Drug Store MTN 880335508</strong><br><a href="https://wa.me/" target="_blank" rel="noopener">Open WhatsApp</a></div>
+    <div class="temple"><strong>Gabe's CashApp</strong><br><a href="https://wa.me/" target="_blank" rel="noopener">Open WhatsApp</a></div>
+    <div class="temple"><strong>Tech</strong><br><a href="https://wa.me/" target="_blank" rel="noopener">Open WhatsApp</a></div>
+    <div class="temple"><strong>Mama's</strong><br><a href="https://wa.me/" target="_blank" rel="noopener">Open WhatsApp</a></div>
+    <div class="temple"><strong>Nodes A–E</strong><br><a href="https://wa.me/" target="_blank" rel="noopener">Open WhatsApp</a></div>
+  </div>
+  <p class="disclaimer">WhatsApp destinations are left as safe links until the exact group/invite URLs are supplied; no placeholder phone numbers are fabricated.</p>
+</section>
+
+<!-- MISSING ASSETS RESTORED -->
+<div class="grid">
+  <div class="card">
+    <img src="HumanRightsAngels-The-Registry_files/Mosetta-restaurant.png" alt="Mosetta's Online Liberian Restaurant" onerror="this.src='kingdom_art/kingdom-page-02.jpg'">
+    <div class="info"><h3>Mosetta's Online Liberian Restaurant</h3><p>CEO: Mosetta • Online Commerce • Registry Active</p></div>
+  </div>
+  <div class="card">
+    <img src="HumanRightsAngels-The-Registry_files/thedrugstore.png" alt="Dr. Isaiah Shad Yancy - The Drug Store" onerror="this.src='kingdom_art/kingdom-page-03.jpg'">
+    <div class="info"><h3>Dr. Isaiah Shad Yancy — The Drug Store</h3><p>Pharma • Community Health • Monrovia LR</p></div>
+  </div>
+  <div class="card">
+    <img src="HumanRightsAngels-The-Registry_files/gabeslandscaping.png" alt="Gabe's Landscaping" onerror="this.src='kingdom_art/kingdom-page-04.jpg'">
+    <div class="info"><h3>Gabe's Landscaping</h3><p>Outdoor Design • Kingdom Grounds Keeper</p></div>
+  </div>
+  <div class="card">
+    <img src="HumanRightsAngels-The-Registry_files/veronica-tarr-v2.png" alt="Veronica Tarr V2 Business Center" onerror="this.src='kingdom_art/kingdom-page-05.jpg'">
+    <div class="info"><h3>Vera Tarr — CEO of V2's Business Center</h3><p>V2's Business Center • Aug 26, 2025 • Registry</p></div>
+  </div>
+  <div class="card">
+    <img src="HumanRightsAngels-The-Registry_files/fe-business.png" alt="Fe's Business Center" onerror="this.src='kingdom_art/kingdom-page-06.jpg'">
+    <div class="info"><h3>Fe — Fe's Business Center</h3><p>Micro-Commerce • Liberian Market</p></div>
+  </div>
+  <div class="card">
+    <img src="HumanRightsAngels-The-Registry_files/derrina-evening.png" alt="Derrina Affordable Evening Wear" onerror="this.src='kingdom_art/kingdom-page-07.jpg'">
+    <div class="info"><h3>Derrina — Affordable Evening Wear</h3><p>Fashion • Evening Commerce</p></div>
+  </div>
+  <div class="card">
+    <img src="HumanRightsAngels-The-Registry_files/bendu-chris-registry.png" alt="Bendu K Massaley & Ambassador Chris Collins" onerror="this.src='kingdom_art/kingdom-page-08.jpg'">
+    <div class="info"><h3>Bendu K. Massaley & Amb. Chris Collins</h3><p>Human Rights Registry • Partnership</p></div>
+  </div>
+  <div class="card">
+    <img src="HumanRightsAngels-The-Registry_files/logo.png" alt="Book Cover" onerror="this.src='kingdom_art/kingdom-page-09.jpg'">
+    <div class="info"><h3>Book Cover • Pharaoh Archives</h3><p>Digitally Created Content • PHARAOH NONPROFIT</p></div>
+  </div>
+</div>
+
+<!-- MUSIC THEATER -->
+<div class="music">
+  <h3>🎵 MUSIC THEATER — WHILE WE PERFECT THE VIDEOS</h3>
+  <p style="text-align:center;opacity:.6;font-size:13px;margin-bottom:12px">Light embeds • No phone storage • Streams from YouTube</p>
+  <div class="music-grid">
+    <iframe src="https://www.youtube.com/embed/Bs5RF8svlq4" title="Kingdom Short 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/dhMFcoDD2Tk" title="Kingdom Short 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <p style="text-align:center;margin-top:12px;font-size:12px;opacity:.6">Full tracks backup: kingdom-drive:PHARAOH-ARCHIVE/Songs/ — pulled via yt-dlp in Termux</p>
+</div>
+
+<!-- KINGDOM ART -->
+<div class="art">
+  <h3>🦁 KINGDOM ART • 22 PAGES FROM PDF RESTORED</h3>
+  <div class="art-grid">
+    <!-- Auto uses extracted JPGs -->
+    <img src="kingdom_art/kingdom-page-01.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-02.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-03.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-04.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-05.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-06.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-07.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-08.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-09.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-10.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-11.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-12.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-13.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-14.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-15.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-16.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-17.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-18.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-19.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-20.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-21.jpg" loading="lazy">
+    <img src="kingdom_art/kingdom-page-22.jpg" loading="lazy">
+  </div>
+</div>
+
+<footer>
+  <img src="HumanRightsAngels-The-Registry_files/receive_8kB.png" alt="Pharaoh Diamond Anchor" style="width:90px; margin-bottom:15px;" onerror="this.style.display='none'">
+  <h3 style="margin:10px 0; color:#D4AF37;">THE PHARAOH CONGLOMERATE LLC</h3>
+  <p style="margin:5px 0;">Commerce Theater & HumanRightsAngels — The Registry</p>
+  
+  <p style="margin:18px 0; font-size:20px;">
+    <a href="https://wa.me/17712238021" style="color:#25D366; text-decoration:none; font-weight:bold;">
+      📱 WhatsApp Business: (771) 223-8021
+    </a>
+  </p>
+  
+  <p style="margin:12px 0;">
+    <a href="https://pharaoh-conglomerate.org/">Pharaoh Angels Inc 501(c)(3) NGO</a> | 
+    <a href="https://registry.pharaoh-conglomerate.org/">The Pharaoh Conglomerate LLC Registry</a>
+  </p>
+  
+  <p style="font-size:12px; opacity:.75; margin-top:20px; border-top:1px solid #222; padding-top:15px; max-width:700px; margin-left:auto; margin-right:auto;">
+    Commerce Theater operated by The Pharaoh Conglomerate LLC — Separate from Pharaoh Angels Inc nonprofit.<br>
+    Registry services • Strategic partners • Affiliate infrastructure • Monrovia, Montserrado County, LR<br>
+    US: (771) 223-8021 | Digitally Created Video Content • Micdom Records • PHARAOH NONPROFIT
+  </p>
+  
+  <p style="font-size:13px; margin-top:18px; letter-spacing:1px;">
+    Created With 🫡 • Powered by <span style="color:#0084FF; font-weight:bold;">Meta AI</span> • Hermes-Toth-Agent: KINGDOM IS LIVE LǍOBǍN
+  </p>
+  <p style="font-size:11px; opacity:.5; margin-top:8px;">V25.3 • Built on Blackview A52 Pro + Termux rclone kingdom-drive • 2026</p>
+</footer>
+
+
+<script>
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  const ref = params.get('ref');
+  if(ref){
+    localStorage.setItem('pharaohAffiliateRef', ref);
+    const badge = document.createElement('div');
+    badge.textContent = '⭐ Affiliate Ref: ' + ref;
+    badge.style.cssText='position:fixed;right:12px;bottom:12px;z-index:9999;background:#D4AF37;color:#000;padding:9px 13px;border-radius:22px;font:700 12px Segoe UI,Arial;box-shadow:0 5px 22px rgba(0,0,0,.4)';
+    document.body.appendChild(badge);
+  }
+})();
+</script>
+
+</body>
+</html>
